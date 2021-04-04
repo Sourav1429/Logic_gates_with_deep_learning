@@ -30,7 +30,7 @@ err,target = 1,0
 epoch,max_epoch=0,10
 while(err>target and epoch < max_epoch):
     epoch+=1
-    err, =sess.run([mse,train])
+    err,_=sess.run([mse,train])
     print('epoch:', epoch, 'mse:',err)
 
 
